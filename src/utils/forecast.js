@@ -15,8 +15,8 @@ const forecast = (latitude,longitude,callback) => {
         
       //   // console.log('Weather is: '+ w_description+'. It\'s currently '+temp+' degree out. It feels like '+feels +' degree out.');
       // })
-      callback(undefined,'Currently '+response.body.current.temperature+' degree out. It feels like '+response.body.current.feelslike+' degree out.')
-      
+      // console.log(response.body);
+      callback(undefined,'Currently '+response.body.current.temperature+'degree out. It feels like '+response.body.current.feelslike+' with Humidity'+response.body.current.humidity)
     }
   })
 
